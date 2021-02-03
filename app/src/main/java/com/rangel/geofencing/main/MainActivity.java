@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra(LONGITUD, "");
             startActivity(intent);
         });
-
+        enabledUserLocation();
         binding.tvPermisos.setOnClickListener(v -> {
             enabledUserLocation();
         });
