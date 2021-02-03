@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GeoFencing</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="validar_permisos">Validar permisos</string>
+    <string name="selecionar_ubicaci_n">Selecionar ubicación Geofence</string>
+    <string name="ubicaci_ce_geofend">Establece la ubicación Geofence</string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    <string name="activar_geofence">Activar geofence</string>
+</resources>

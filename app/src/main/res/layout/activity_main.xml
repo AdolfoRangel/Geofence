@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".main.MainActivity"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/verdeClaro"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:id="@+id/tv_permisos"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="@string/validar_permisos"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textAllCaps="false"
+                />
+
+            <TextView
+                android:id="@+id/tv_iniciar"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="70dp"
+                android:background="@drawable/button"
+                android:text="@string/selecionar_ubicaci_n"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="@string/ubicaci_ce_geofend"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textSize="22sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/et_latitud"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:digits="0123456789-."
+                android:inputType="numberSigned|numberDecimal"
+                android:layout_weight="1"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:background="@color/white"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="@string/latitud"
+                />
+
+            <EditText
+                android:id="@+id/et_longitud"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:digits="0123456789-."
+                android:inputType="numberSigned|numberDecimal"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:background="@color/white"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="@string/longitud"
+                />
+
+            <TextView
+                android:id="@+id/tv_aceptar"
+                android:layout_width="0dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="@string/activar_geofence"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            tools:text="Lista de feofence"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:textSize="16sp"/>
+        <ListView
+            android:id="@+id/lv_ubicaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="@color/black"
+            />
+    </LinearLayout>
+
+    <data>
+
+    </data>
+
+
+</layout>
